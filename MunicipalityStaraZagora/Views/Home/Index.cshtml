@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Начална страница";
+}
+
+<div class="container-fluid">
+
+    <div class="container">
+        <div class=" row bg-white shadow-sm rounded-3 mt-3 pb-3">
+            <div class="col-md-7 mt-3">
+                <h2>Добре дошли в Община Стара Загора!</h2>
+                <p>В официалния сайт на Община Стара Загора може да намерите различна информация и услуги като информацията за града, времето, новини, административни услуги и други.</p>
+                <div class="">
+                    <div class="row">
+                        <h2></h2>
+
+                        <div class="col-md-3">
+                            <a class="btn btn-info w-100" asp-controller="Service" asp-action="Index">
+                                Услуги
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 d-flex">
+                            <a class="btn btn-success w-100" asp-controller="Home" asp-action="AboutTheCity">
+                                За града
+                            </a>
+                        </div>
+                        <div class="col-md-3 d-flex">
+                            <a class="btn btn-primary w-100" asp-controller="Gallery" asp-action="Index">
+                                Галерия
+                            </a>
+                        </div>
+                        <div class="col-md-3 d-flex">
+                            <a class="btn btn-primary w-100" asp-controller="News" asp-action="Index">
+                                Новини
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-body shadow-lg text-black mt-5">
+                    <div class="card-body">
+                        <h2>Последни новини от града</h2>
+
+                        <div class="d-flex border-bottom-blue  pt-3 pb-2 align-items-center justify-content-between">
+                            <a class="text-info" href="https://dariknews.bg/regioni/stara-zagora/rabotnicite-ot-zavod-arsenal-otnovo-izlizat-v-prinuditelen-otpusk-2300055" class="link-primary">
+                                Работниците от завод „Арсенал“ отново излизат в принудителен отпуск
+                            </a>
+                        </div>
+                        <div class="d-flex border-bottom-blue pt-3 pb-2 align-items-center justify-content-between">
+                            <a class="text-info" href="https://dariknews.bg/regioni/stara-zagora/ot-14-fevruari-uchenicite-v-oblast-stara-zagora-se-vryshtat-na-uchilishte-2300021" class="link-primary">
+                                От 14 февруари учениците в област Стара Загора се връщат на училище
+                            </a>
+                        </div>
+                        <div class="d-flex border-bottom-blue pt-3 pb-2 align-items-center justify-content-between">
+                            <a class="text-info" href="https://dariknews.bg/regioni/stara-zagora/piian-shofior-predizvika-katastrofa-v-stara-zagora-2299427" class="link-primary">
+                                Пиян шофьор предизвика катастрофа в Стара Загора
+                            </a>
+                        </div>
+                        <div class="d-flex border-bottom-blue pt-3 pb-2 align-items-center justify-content-between">
+                            <a class="text-info" href="https://dariknews.bg/novini/rezhim-na-ulichnoto-osvetlenie-vyvezhdat-i-v-obshtina-kazanlyk-2299146" class="link-primary">
+                                Режим на уличното осветление въвеждат и в Община Казанлък
+                            </a>
+                        </div>
+                        <div class="d-flex border-bottom-blue pt-3 pb-2 align-items-center justify-content-between">
+                            <a class="text-info" href="https://dariknews.bg/regioni/stara-zagora/v-stara-zagora-izzeha-21-predmeta-s-belezite-na-arheologicheski-obekti-2298864" class="link-primary">
+                                В Стара Загора иззеха 21 предмета с белезите на археологически обекти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 mt-3 pb-3">
+                <div class="text-center">
+                    <img src="https://dolap.bg/wp-content/uploads/2017/03/Stara-Zagora-coat-of-arms_svg.png" class=""style="height:100px;" alt="Responsive image">
+                    <p class="text-center">
+                        Герб на Стара Загора
+                    </p>
+                </div>
+                <div class="shadow-lg">
+                    <img src="https://www.naas.government.bg/data/image/structure/oblast_stzg.jpg" class="img-thumbnail w-100" alt="Responsive image">
+                    <p class="text-center">
+                        Карта - област Стара Загора
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,17 @@
+﻿@model ICollection<MunicipalityStaraZagora.Models.GalleryItemViewModel>
+@{
+    ViewData["Title"] = "Галерия";
+}
+
+<div class="container">
+    <h3 class="mt-2 pb-3">Галерия</h3>
+    <div class="row shadow-lg pt-2">
+        @foreach (var image in Model)
+        {
+            <div class="col-md-4 mb-3 text-center">
+                <img class="shadow-lg" src="@image.ImageUrl" style="width:400px; height:260px;border: 5px solid #555;"/>
+                <p class="text-info">@image.Description</p>
+            </div>
+        }
+    </div>
+</div>
